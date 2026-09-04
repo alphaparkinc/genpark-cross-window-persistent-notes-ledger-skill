@@ -1,0 +1,39 @@
+{
+  "name": "genpark-cross-window-persistent-notes-ledger-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Cross-window structured persistent notes ledger preserving non-lossy decision trees across long coding sessions.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "coding-agent",
+  "tags": [
+    "codex-astra",
+    "persistent-notes",
+    "long-context",
+    "session-memory",
+    "developer-tools"
+  ],
+  "inputs": {
+    "session_id": {
+      "type": "string"
+    },
+    "goal_key": {
+      "type": "string"
+    },
+    "completed_subgoals": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "ledger_id": {
+      "type": "string"
+    },
+    "compression_lossless_guarantee": {
+      "type": "boolean"
+    },
+    "ledger_snapshot_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
